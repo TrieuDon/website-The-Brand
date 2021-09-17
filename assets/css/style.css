@@ -1,0 +1,496 @@
+
+.clear {
+    clear:both;
+}
+
+.white-color {
+    color: #fff !important; 
+}
+
+.row {
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.col {
+    float: left;
+    padding: 0 8px;
+}
+
+
+.col-third {
+    width: 33.33333%;
+}
+
+.col-half {
+    width: 50%;
+}
+
+.btn {
+    padding: 8px 16px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    line-height: 22px;
+    font-weight: 500;
+}
+
+.btn:hover {
+    background-color: #ccc;
+    color: #000;
+    cursor: pointer;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+    height: 46px;
+    width: 100%;
+    background-color: #000;
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.header .nav {
+    display: inline-block;
+}
+
+.nav li {
+    display: inline-block;
+    position: relative;
+    
+ }
+
+.nav > li > a {
+    text-transform: uppercase;
+}
+
+.nav li a {
+     display: inline-block;
+     color: #fff;
+     padding: 0 24px;   
+     text-decoration: none;
+     line-height: 46px;
+     font-size: 15px;
+}
+
+.nav > li:hover > a {
+    color: #000;
+    background-color: #ccc;
+}
+
+.nav .subnav {
+     display: none;
+     position: absolute;
+     min-width: 160px;
+     background-color: #fff;
+     top: 100%;
+     left: 0;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+ }
+
+.nav li:hover .subnav {
+     display: block;
+ }
+
+.nav .subnav li {
+    display: block;
+}
+
+ .nav .subnav a {
+     color: #000;
+     display: block;
+     padding: 0 16px;
+     line-height: 39px;
+ }
+
+ .nav .subnav li:hover a {
+     background-color: #ccc;
+ }  
+
+ .nav .nav-icon_down {
+    font-size: 12px;
+ }
+ .header .menu-mobile,
+ .header .search-btn {
+     float: right;
+ }
+
+ .header .menu-mobile .menu-icon,
+ .header .search-btn .search-icon {
+    color:#fff;
+    display: inline-block;
+    line-height: 46px;
+    padding: 0 23px;
+ }
+
+ .header .menu-mobile .menu-icon {
+     display: none;
+ }
+
+ .header .menu-mobile:hover .menu-icon {
+     background-color: #ccc;
+ }
+
+ .header .search-btn:hover .search-icon{
+     background-color: #f44336;
+     cursor: pointer;
+ }
+
+
+ .slider {
+     width: 100%;
+     position: relative;
+     margin-top: 46px;
+     padding-top: 50%;
+     background: url('/html/W3_band_website/assets/img/slider/chicago.jpg') top center / cover no-repeat;
+ }
+
+ .slider .text-content {
+     position: absolute;
+     color: #fff;
+     bottom: 47px;
+    left: 0;
+    right: 0;
+    text-align: center;
+ }
+
+ .slider .text-content .text-heading {
+    font-size: 25px;
+ } 
+
+ .slider .text-content .text-description {
+     margin-top: 25px;
+     font-size: 15px;
+ }
+.content .content-section {
+    width: 800px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 64px 0px;
+}
+
+.content .content-section .content-section_heading {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 4px;
+}
+
+.content .content-section .content-section_sub-heading {
+    text-align: center;
+    font-size: 15px;
+    margin-top: 25px;
+    font-style: italic;
+    opacity: 0.5;
+
+}
+
+.content .content-section .content-section_description {
+    margin-top: 25px;
+    font-size: 15px;
+    text-align: justify;
+    line-height: 1.4;
+}
+
+.content .member-list {
+    padding: 47px 0 32px;
+    margin: 0 auto;
+    text-align: center;
+    
+}
+
+.content .member-item {
+    float: left;
+    width: 33.33333%;
+} 
+
+.content .member-name {
+    font-size: 15px;
+    margin: 15px 0;
+}
+
+.content .members {
+    width: 154px;
+    height: auto;
+    border-radius: 4px;
+}
+
+.tour-dates {
+    background-color: #000;
+    color: #fff;
+    font-size: 15px;
+}
+
+.book-tickets {
+    background-color: #fff;
+    color:#000;
+    margin-top: 40px;
+    list-style: none;
+}
+
+.book-tickets li {
+    padding: 8px 16px;
+    color: #757575;
+    border-bottom: 1px solid #ddd;
+}
+
+.book-tickets .sold-out {
+    background-color: #f44336;
+    padding: 2px 8px; 
+    color: #fff;
+    line-height: 28px;
+    margin-left: 16px;
+}
+
+.book-tickets .quantity {
+    float: right;
+    border-radius: 50%;
+    background-color: #000;
+    color: #fff;
+    width: 22px;
+    text-align: center;
+    line-height: 22px;
+    margin-top: -2px;
+    margin-right: 16px;
+
+}
+
+
+.tour-dates .ticket-list {
+   padding: 32px 0;
+}
+
+.tour-dates .img-place {
+    width: 100%;
+    display: block;
+}
+
+.tour-dates .img-place:hover {
+    opacity: 0.6;
+}
+
+
+.tour-dates .ticket-body {
+    background-color: #fff;
+    color: #000;
+    padding: 16px 16px;
+    font-size: 15px;
+    margin-bottom: 16px;
+}
+
+.tour-dates .ticket-body .heading {
+    font-size: 15px;
+    font-weight: 550;
+    margin: 15px 0;
+}
+
+.tour-dates .ticket-body .date {
+    opacity: 0.6;
+    margin: 15px 0;
+}
+
+.tour-dates .ticket-body .description {
+    line-height: 1.5;
+    margin: 15px 0;
+}
+
+.content-section .contact-body {
+    padding: 32px 0px;
+    margin-top: 15px;
+    width: 100%;
+}
+
+.contact-body .contact-info {
+    width: 50%;
+    float: left;
+}
+
+.contact-body .contact-list {
+    list-style: none;
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+.contact-body .contact-icon {
+    padding-right: 24px;
+    display: inline-block;
+    width: 20px;
+    left: 0;
+}
+
+.contact-body .contact-form{
+    font-size: 15px;
+    /* transform: translateX(16px); */
+}
+
+.contact-body .user-name-email {
+    padding-bottom: 8px;
+}
+
+.contact-body .contact-input{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+} 
+
+.contact-btn {
+    margin-top: 16px;
+    float: right;
+    text-transform: uppercase;
+}
+
+.map-section img {
+    width: 100%;
+}
+
+.section-footer {
+    padding: 64px 16px;
+    text-align: center;
+    background-color:  #f1f1f1;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.section-footer a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.section-footer a:hover {
+    opacity: 0.4;
+}
+
+.social-list {
+    font-size: 20px;
+}
+
+.copyright {
+    font-size: 16px;
+    margin: 16px 0;
+}
+
+.modal {
+    display: none;
+}
+
+.modal.open {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.modal .modal-content {
+    position: relative;
+    width: 900px;
+    max-width: calc(100% - 32px);
+    animation: modalTransform ease-out 0.5s;
+}
+
+.modal .modal-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #fff;
+    padding: 16px;
+    opacity: 0.7;
+}
+
+.modal .modal-close:hover{
+    opacity: 1;
+}
+
+.modal .modal-header {
+    font-size: 30px;
+    width: 100%;
+    text-align: center;
+    line-height: 44px;
+    padding: 32px 0;
+    background-color: #009688;
+}
+
+.modal .modal-header .modal-header-icon {
+    margin-right: 12px;
+}
+
+.modal-header header {
+    margin: 10px 0;
+    color: #fff;
+    font-weight: 300;
+    letter-spacing: 4px;
+}
+
+.modal-body {
+    background-color: #fff;
+    padding: 16px 16px;
+}
+
+.modal-body .modal-label {
+    display: block;
+    font-size: 15px;
+    margin-top: 16px;   
+    margin-bottom: 12px;
+}
+
+.modal-body .modal-input {
+    font-size: 15px;
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+}
+
+.modal-body #modal-btn {
+    background-color: #009688;
+    border: none;
+    width: 100%;
+    font-size: 15px;
+    margin: 16px 0;
+    padding: 16px 0;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.modal-body #modal-btn:hover {
+    opacity: 0.8;
+}
+
+.modal-footer {
+    background-color: #fff;
+    text-align: right;
+    padding-bottom: 30px;
+    padding-right: 16px;
+    font-size: 15px;
+}
+
+.modal-footer a {
+    color: #2196F3;
+}
+
+@keyframes modalTransform {
+    from {
+        opacity: 0;
+        transform: translateY(-130px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
