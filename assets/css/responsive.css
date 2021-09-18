@@ -1,4 +1,8 @@
-@media (max-width: 740px) {
+@media (max-width: 739px) {
+    .btn {
+        padding: 13px 16px;
+    }
+
     .header {
         overflow: hidden;
     }
@@ -89,5 +93,15 @@
     .s-mt8 {
         margin-top: 8px;
     }
-    
+}
+
+@media  (max-width: 1023px) {
+    .social-list a {
+        padding: 0 8px;
+    }
+
+    .copyright a {
+        margin: 8px 0;
+        display: inline-block;
+    }
 }
