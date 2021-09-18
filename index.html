@@ -144,7 +144,7 @@
                     Fan? Drop a note!
                 </div>
                 <div class="contact-body">
-                <div class="row">
+                    <div class="row">
                         <div class="col col-half s-col-full">
                             <ul class="contact-list">
                                 <li>
@@ -268,17 +268,35 @@
     <script>
         const mobileMenu = document.getElementById('menu-mobile-icon');
         const header = document.getElementById('header-bar');
+        const navMore = document.querySelector('#header-bar>.nav>li:nth-last-child(1)>a')
+        const subNav = document.querySelector('#header-bar > .nav #subnav-bar');
+        let navMoreOpen = false;
         let headerHeight = header.clientHeight;
 
         mobileMenu.addEventListener('click', () => {
+
             let isClosed = header.clientHeight === headerHeight;
             if (isClosed) {
                 header.style.height = 'auto'
             }
             else {
                 header.style.height = null;
-                subNav.style.display = 'none';
+                navMoreOpen = false
+                subNav.classList.remove('s-subnav');
+            };
+
+
+            navMore.addEventListener('click', (e) => {
+            e.preventDefault();
+            header.style.height = 'auto';
+            if (navMoreOpen) {
+                subNav.classList.add('s-subnav')
             }
+            else {
+                subNav.classList.remove('s-subnav')
+            };
+            navMoreOpen = !navMoreOpen;
+        })
         })
 
         const menuItems = document.querySelectorAll('.nav li a[href*="#"]')
@@ -288,30 +306,7 @@
                 header.style.height = null;
             })
         });
-
-        const navMore = document.querySelector('#header-bar>.nav>li:nth-last-child(1)>a')
-        const subNav = document.querySelector('#header-bar > .nav #subnav-bar');
-        let navMoreClose = false;
-
-
-        // console.log(subNav);
-        // console.log(navMore);
-        navMore.addEventListener('click', (e) => {
-            e.preventDefault();
-            header.style.height = 'auto';
-            navMoreClose = !navMoreClose;
-            if (navMoreClose) {
-                subNav.style.display = 'block'
-            }
-            else {
-                subNav.style.display = 'none'
-            };
-            // let isClosed = headerHeight;
-            // if (isClosed) {
-            //     subNav.style.display = 'none'
-            // }
-
-        })
+        
     </script>
 
 </body>

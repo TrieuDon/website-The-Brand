@@ -3,6 +3,14 @@
         overflow: hidden;
     }
 
+    .header .search-btn {
+        display: none;
+    }
+
+    .header .menu-mobile .menu-icon {
+        display: block;
+    }
+
     .nav {
         display: block;
         width: 100%;
@@ -17,6 +25,10 @@
 
     .nav .subnav {
         position: initial;
+    }
+
+    .nav .s-subnav {
+        position: absolute;
     }
 
     .nav .subnav a {
@@ -35,14 +47,6 @@
     .nav > li > a {
         display: inline-block;
         width: 100%;
-    }
-
-    .header .search-btn {
-        display: none;
-    }
-
-    .header .menu-mobile .menu-icon {
-        display: block;
     }
 
     .content .member-item {
@@ -68,6 +72,11 @@
         padding-right: 16px;
     }
 
+    .content .content-section {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
     .content .content-section .content-section_description {
         padding: 0 16px;
     }
@@ -81,10 +90,4 @@
         margin-top: 8px;
     }
     
-}
-
-@media (min-width: 740px) {
-    .header .nav .subnav {
-        display: none;
-    }
 }

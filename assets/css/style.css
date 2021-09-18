@@ -155,7 +155,7 @@ html {
      position: relative;
      margin-top: 46px;
      padding-top: 50%;
-     background: url('/html/W3_band_website/assets/img/slider/chicago.jpg') top center / cover no-repeat;
+     background: url('../img/slider/chicago.jpg') top center / cover no-repeat;
  }
 
  .slider .text-content {
@@ -165,6 +165,7 @@ html {
     left: 0;
     right: 0;
     text-align: center;
+    text-shadow: 2px 2px 1px black;
  }
 
  .slider .text-content .text-heading {
@@ -179,7 +180,7 @@ html {
     width: 800px;
     max-width: 100%;
     margin: 0 auto;
-    padding: 64px 0px;
+    padding: 64px 16px;
 }
 
 .content .content-section .content-section_heading {
